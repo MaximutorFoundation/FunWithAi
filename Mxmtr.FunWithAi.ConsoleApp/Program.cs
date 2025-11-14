@@ -1,12 +1,22 @@
 ﻿using System.Runtime.InteropServices;
 using System.Text.RegularExpressions;
 
-namespace Mxmtr.FunAiWith.ConsoleApp
+namespace Mxmtr.FunWithAi.ConsoleApp
 {
     internal static class Program
     {
         private static async Task Main(string[] args)
         {
+            if (args.Length > 0)
+            {
+                Console.WriteLine("You included arg information:");
+                
+                foreach (var arg in args)
+                {
+                    Console.WriteLine($" - {arg}");
+                }
+            }
+
             await RunAiTimeAssistantAsync();
         }
 
