@@ -88,7 +88,7 @@ namespace Mxmtr.FunWithAi.ConsoleApp
             Console.Clear();
             Console.WriteLine($" It is {DateTime.Now:t}.  You are a nice friend.");
             Console.WriteLine("When you don't need me anymore, just press a key to stop...");
-            Beep();
+            Beep(); // can the  AI tell people to turn up speakers to hear the beep?
         }
 
         private static void Beep(int times = 1)
